@@ -1,7 +1,7 @@
 function showMessage() {
     const messageElement = document.getElementById('message');
-    const sisterName = "Sonam"; // Customize this
-    const yourName = "Jai"; // Customize this
+    const sisterName = "didi"; // Customize this
+    const yourName = "jai"; // Customize this
 
     const message = `
         Dear ${didi},
