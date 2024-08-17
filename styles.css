@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h1 {
+    color: #f76c6c;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.card button {
+    background: #f76c6c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: #c74c5a;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: url('rakhi.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.5;
+}
